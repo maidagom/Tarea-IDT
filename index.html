@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | [Challenge Name Here]</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200..700&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config =  
+    {  
+      theme : {
+        extend : {
+          fontFamily : { 
+            tx : ['Barlow Semi Condensed', 'sans-serif']
+          },
+          fontWeight: {
+            500: 500,
+          },
+        }
+      }
+    }
+  </script>
+</head>
+<body class="h-lvh grid place-items-center bg-gray-100 font-tx text-[15px]">
+  <section class="grid container mx-auto grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+    <article class=" relative bg-purple-700 p-8 flex flex-col gap-6 rounded-2xl shadow-[36px_36px_22px_#00000011] md:col-span-2 bg-[url('./images/bg-pattern-quotation.svg')] bg-no-repeat bg-[position:top_0rem_right_5rem] bg-[length:19%]">
+     <div class="relative z-10 flex items-center gap-6">
+      <img class="rounded-full border border-purple-400 border-solid" src="./images/image-daniel.jpg" alt="#">
+       <div>
+         <span class="block text-gray-200">Daniel Clifford</span>
+         <span class="block text-gray-200">Verified Graduate</span>
+       </div>
+     </div>
+
+     <h1 class="text-gray-100 font-semibold text-2xl">
+        I received a job offer mid-course, and the subjects I learned were current, if not more so, 
+        in the company I joined. I honestly feel I got every penny’s worth.
+      </h1>
+
+     <p class="text-gray-200 text-pretty">
+        “ I was an EMT for many years before I joined the bootcamp. I’ve been looking to make a 
+       transition and have heard some people who had an amazing experience here. I signed up 
+       for the free intro course and found it incredibly fun! I enrolled shortly thereafter. 
+       The next 12 weeks was the best - and most grueling - time of my life. Since completing 
+       the course, I’ve successfully switched careers, working as a Software Engineer at a VR startup. ”
+      </p>
+    </article>
+
+    <article class="bg-gray-600 p-8 flex flex-col gap-6 rounded-2xl shadow-[36px_36px_22px_#00000011]">
+     <div class="flex items-center gap-6">
+      <img class="rounded-full border border-gray-500 border-solid" src="./images/image-jonathan.jpg" alt="#">
+       <div>
+         <span class="block text-gray-100">Jonathan Walters</span>
+         <span class="block text-gray-100">Verified Graduate</span>
+       </div>
+     </div>
+
+      <h1 class="text-gray-200 font-semibold text-2xl">
+       The team was very supportive and kept me motivated
+      </h1>
+
+      <p class="text-gray-200">
+       “ I started as a total newbie with virtually no coding skills. I now work as a mobile engineer 
+       for a big company. This was one of the best investments I’ve made in myself. ”
+      </p>
+    </article>
+
+    <article class="bg-gray-50 p-8 flex flex-col gap-6 rounded-2xl shadow-[36px_36px_22px_#00000011] md:row-span-2 order-last lg:order-none lg:row-start-1 lg:col-start-4">
+      <div class="flex items-center gap-6">
+      <img class="rounded-full border border-gray-500 border-solid" src="./images/image-kira.jpg" alt="#">
+       <div>
+         <span class="block text-gray-800">Kira Whittle</span>
+         <span class="block text-gray-600">Verified Graduate</span>
+       </div>
+     </div>
+
+     <h1 class="text-gray-700 font-semibold text-2xl">
+       Such a life-changing experience. Highly recommended!
+     </h1>
+
+     <p class="text-gray-700">
+       “ Before joining the bootcamp, I’ve never written a line of code. I needed some structure from 
+       professionals who can help me learn programming step by step. I was encouraged to enroll by a former 
+       student of theirs who can only say wonderful things about the program. The entire curriculum and staff 
+       did not disappoint. They were very hands-on and I never had to wait long for assistance. The agile team 
+       project, in particular, was outstanding. It took my learning to the next level in a way that no tutorial 
+       could ever have. In fact, I’ve often referred to it during interviews as an example of my developent 
+       experience. It certainly helped me land a job as a full-stack developer after receiving multiple offers. 
+       100% recommend! ”
+     </p>
+    </article>
+
+    <article class="bg-gray-50 p-8 flex flex-col gap-6 rounded-2xl shadow-[36px_36px_22px_#00000011]">
+      <div class="flex items-center gap-6">
+      <img class="rounded-full border border-gray-500 border-solid" src="./images/image-jeanette.jpg" alt="#">
+       <div>
+         <span class="block text-gray-800">Jeanette Harmon</span>
+         <span class="block text-gray-600">Verified Graduate</span>
+       </div>
+     </div>
+      
+      <h1 class="text-gray-700 font-semibold text-2xl">
+       An overall wonderful and rewarding experience
+      </h1>
+
+      <p class="text-gray-700">
+       “ Thank you for the wonderful experience! I now have a job I really enjoy, and make a good living 
+       while doing something I love. ”
+      </p>
+    </article>
+
+    <article class="bg-slate-900 p-8 flex flex-col gap-6 rounded-2xl shadow-[36px_36px_22px_#00000011] md:col-span-2">
+      <div class="flex items-center gap-6">
+      <img class="rounded-full border border-purple-500 border-solid" src="./images/image-patrick.jpg" alt="#">
+       <div>
+         <span class="block text-gray-300">Patrick Abrams</span>
+         <span class="block text-gray-300">Verified Graduate</span>
+       </div>
+     </div>
+
+      <h1 class="text-gray-300 font-semibold text-2xl">
+        Awesome teaching support from TAs who did the bootcamp themselves. Getting guidance from them and 
+        learning from their experiences was easy.
+      </h1>
+
+      <p class="text-gray-300">
+        “ The staff seem genuinely concerned about my progress which I find really refreshing. The program 
+       gave me the confidence necessary to be able to go out in the world and present myself as a capable 
+       junior developer. The standard is above the rest. You will get the personal attention you need from 
+       an incredible community of smart and amazing people. ”
+      </p>
+    </article>
+  
+  </section>
+</body>
+</html>
